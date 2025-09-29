@@ -115,7 +115,7 @@ const Formulario: React.FC = () => {
   return (
     <div className="min-h-screen bg-gray-200 flex items-center justify-center w-full">
       {/* Contenedor principal sin márgenes laterales */}
-      <div className="w-full flex flex-col lg:flex-row bg-white shadow-xl overflow-hidden mx-0">
+      <div className="w-full flex flex-col lg:flex-row bg-white shadow-xl overflow-hidden mx-0 ">
         
         {/* Imagen - Responsive */}
         <div className="lg:w-4/10 w-full">
