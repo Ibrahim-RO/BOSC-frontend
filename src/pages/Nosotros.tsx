@@ -1,5 +1,5 @@
 import React from 'react'
-import fondoHome from '../assets/Inicio/Base_Bosc_inicio.webp'
+import fondoNosotros from '../assets/Nosotros/bosc fondo002.webp'
 import NosotrosEquipo from '../components/nosotros/NosotrosEquipo'
 import NosotrosDiferenciadores from '../components/nosotros/NosotrosDiferenciadores'
 import NosotrosFilosofia from '../components/nosotros/NosotrosFilosofia'
@@ -10,7 +10,7 @@ const Nosotros = () => {
       <section
         className='flex items-center justify-center w-full px-4 sm:px-6 lg:px-8'
         style={{
-          backgroundImage: `url(${fondoHome})`,
+          backgroundImage: `url(${fondoNosotros})`,
           minHeight: '100dvh',
           height: 'auto',
           backgroundPosition: 'center',
@@ -25,7 +25,7 @@ const Nosotros = () => {
                 OFRECEMOS UN BACKOFFICE <br className='hidden sm:block' />
                 ORIENTADA A LA EXCELENCIA
               </h2>
-              <p className='text-base sm:text-lg md:text-xl lg:text-[1.4rem] xl:text-[1.4rem] 2xl:text-2xl font-semibold leading-relaxed text-gray-800'>
+              <p className='text-base sm:text-lg md:text-xl lg:text-[1.4rem] xl:text-[1.4rem] 2xl:text-2xl font-semibold leading-relaxed text-white'>
                 Diseñado con entregables claros y oportunos para que la alta <br className='hidden sm:block' />
                 gerencia se enfoque en el análisis y haga una toma de decisión <br className='hidden sm:block' />
                 oportuna y de valor.
