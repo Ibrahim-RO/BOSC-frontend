@@ -1,15 +1,15 @@
-import React from 'react';
 import logoBosc from '../../assets/Inicio/bosc_icon.svg'
 import { Link } from 'react-router-dom';
 import { MdEmail } from 'react-icons/md';
 import { FaPhoneAlt } from 'react-icons/fa';
+import { navigationSection } from '../../data/menu';
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-200 py-8 lg:px-35">
-      <div className="container mx-auto">
+    <footer className="w-full bg-gray-200 pt-8 space-y-10">
+      <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8 items-center justify-center">
-          
+
           {/* Columna 1: Logo BOSC */}
           <div className="flex flex-col items-center justify-center md:items-center md:border-r-2 md:border-gray-500">
             <div className='flex justify-center items-center gap-5'>
@@ -44,14 +44,13 @@ const Footer = () => {
             <div className="text-center sm:text-center lg:text-left">
               <h3 className="text-lg font-semibold mb-4">SERVICIOS</h3>
               <ul className="space-y-2">
-                <li><a href="#" className="hover:text-gray-500 transition-colors text-sm sm:text-base">Contabilidad y nómina</a></li>
-                <li><a href="#" className="hover:text-gray-500 transition-colors text-sm sm:text-base">Estados financieros</a></li>
-                <li><a href="#" className="hover:text-gray-500 transition-colors text-sm sm:text-base">Finanzas</a></li>
-                <li><a href="#" className="hover:text-gray-500 transition-colors text-sm sm:text-base">Consultoría financiera</a></li>
-                <li><a href="#" className="hover:text-gray-500 transition-colors text-sm sm:text-base">Procesos y control interno</a></li>
-                <li><a href="#" className="hover:text-gray-500 transition-colors text-sm sm:text-base">Impuestos</a></li>
-                <li><a href="#" className="hover:text-gray-500 transition-colors text-sm sm:text-base">Legal</a></li>
-                <li><a href="#" className="hover:text-gray-500 transition-colors text-sm sm:text-base">Recursos humanos</a></li>
+                {navigationSection.map(item => (
+                  <>
+                    {item.subMenu?.map((to) => (
+                      <a href={`servicios${to.href}`} className="block hover:text-gray-500 transition-colors text-sm sm:text-base">{to.title}</a>
+                    ))}
+                  </>
+                ))}
               </ul>
             </div>
           </div>
@@ -72,11 +71,10 @@ const Footer = () => {
             </div>
           </div>
         </div>
-
-        <div className="mt-8 pt-6 text-center text-sm">
-          <p>&copy; {new Date().getFullYear()} Consultores BOSC. Todos los derechos reservados.</p>
-          <p>Consulte nuestros <span className='font-bold'>términos de uso</span> para mas detalles</p>
-        </div>
+      </div>
+      <div className="w-full bg-gray-100 text-center text-sm p-10">
+        <p>&copy; {new Date().getFullYear()} Consultores BOSC. Todos los derechos reservados.</p>
+        <p>Consulte nuestros <span className='font-bold'>términos de uso</span> para mas detalles</p>
       </div>
     </footer>
   );

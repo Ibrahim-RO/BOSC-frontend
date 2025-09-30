@@ -1,4 +1,3 @@
-import React from 'react'
 import automotriz from '../../assets/Inicio/IconosCarrusel/automotriz.webp'
 import bienes from '../../assets/Inicio/IconosCarrusel/bienesdeconsumo.webp'
 import salud from '../../assets/Inicio/IconosCarrusel/salud.webp'

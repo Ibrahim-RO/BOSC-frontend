@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import carru1 from '../../assets/Nosotros/Bosc_nosotros001.webp'
 import carru2 from '../../assets/Nosotros/Bosc_nosotros002.webp'
 import carru3 from '../../assets/Nosotros/Bosc_nosotros003.webp'

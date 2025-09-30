@@ -1,4 +1,3 @@
-import React from 'react'
 import icoContabilidad from '../../assets/Inicio/IconosServicios/Bosc_Icons_01Contabilidad.svg'
 import icoEstados from '../../assets/Inicio/IconosServicios/Bosc_Icons_02EstadosFinan.svg'
 import icoFinanzas from '../../assets/Inicio/IconosServicios/Bosc_Icons_03Finanzas.svg'

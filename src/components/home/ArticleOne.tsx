@@ -1,4 +1,3 @@
-import React from 'react'
 import imgArticulo from '../../assets/Inicio/Bosc_001.webp'
 
 // const ArticleOne = () => {
