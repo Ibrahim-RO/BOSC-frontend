@@ -6,7 +6,7 @@ type PresentationType = {
 
 const SectionOne = ({ title, description, image }: PresentationType) => {
     return (
-        <section className="mt-20">
+        <section className="mt-15">
             <article className="bg-blue-950">
                 <div className="max-w-7xl mx-auto px-10 py-15 grid grid-cols-1 gap-10 lg:gap-0 lg:grid-cols-2 place-items-center">
                     <div className="space-y-8">
