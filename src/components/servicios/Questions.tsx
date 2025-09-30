@@ -23,7 +23,7 @@ const Questions = ( {data} : QuestionsData ) => {
 
     return (
         <section className="max-w-5xl mx-auto my-10 p-3 space-y-10">
-            <h2 className="text-4xl font-bold text-center">Preguntas frecuentes</h2>
+            <h2 className="text-4xl font-bold text-center uppercase">Preguntas frecuentes</h2>
             <div className="border-y border-gray-200">
                 {dataInfo.map((item, index) => (
                     <div
