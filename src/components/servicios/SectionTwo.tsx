@@ -17,7 +17,7 @@ const SectionTwo = ({ image, children }: SectionTwoType) => {
             </div>
 
             <div className="w-full lg:w-1/2 flex items-center bg-white">
-                <div className="p-10 lg:p-20">
+                <div className="p-10 lg:p-20 space-y-8">
                     {children}
                 </div>
             </div>
