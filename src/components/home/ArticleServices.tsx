@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import icoContabilidad from '../../assets/Inicio/IconosServicios/Bosc_Icons_01Contabilidad.svg'
 import icoEstados from '../../assets/Inicio/IconosServicios/Bosc_Icons_02EstadosFinan.svg'
 import icoFinanzas from '../../assets/Inicio/IconosServicios/Bosc_Icons_03Finanzas.svg'
@@ -12,39 +13,48 @@ import icoTecnologia from '../../assets/Inicio/IconosServicios/Bosc_Icons_09Tecn
 const services = [
   {
     title: "Contabilidad y nómina",
-    image: icoContabilidad
+    image: icoContabilidad,
+    href: "servicios/contabilidad"
   },
   {
     title: "Estados financieros",
-    image: icoEstados
+    image: icoEstados,
+    href: "servicios/estados-financieros"
   },
   {
     title: "Finanzas",
-    image: icoFinanzas
+    image: icoFinanzas,
+    href: "servicios/finanzas"
   },
   {
     title: "Consultoría financiera",
-    image: icoConsultoria
+    image: icoConsultoria,
+    href: "servicios/consultoria-financiera"
   },
   {
     title: "Procesos y control interno",
-    image: icoProcesos
+    image: icoProcesos,
+    href: "servicios/procesos"
   },
   {
     title: "Impuestos",
-    image: icoImpuestos
+    image: icoImpuestos,
+    href: "servicios/impuestos"
   },
   {
     title: "Legal",
-    image: icoLegal
+    image: icoLegal,
+    href: "servicios/legal"
   },
   {
     title: "Recurso humano",
-    image: icoRecurso
+    image: icoRecurso,
+    href: "servicios/recursos-humanos"
   },
   {
     title: "Tecnología",
-    image: icoTecnologia
+    image: icoTecnologia,
+    href: "servicios/tecnologia"
   },
   
 ];
@@ -73,9 +83,9 @@ const ArticleServices = () => {
               </h3>
               
               {/* Botón */}
-              <button className=" hover:bg-white hover:text-black cursor-pointer border-2 border-white text-white font-medium py-2 px-4 rounded">
+              <Link to={service.href} className=" hover:bg-white hover:text-black cursor-pointer border-2 border-white text-white font-medium py-2 px-4 rounded">
                 SABER MÁS
-              </button>
+              </Link>
             </div>
           ))}
         </div>

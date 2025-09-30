@@ -44,12 +44,12 @@ const Footer = () => {
             <div className="text-center sm:text-center lg:text-left">
               <h3 className="text-lg font-semibold mb-4">SERVICIOS</h3>
               <ul className="space-y-2">
-                {navigationSection.map(item => (
-                  <>
+                {navigationSection.map((item, idx) => (
+                  <div key={idx}>
                     {item.subMenu?.map((to) => (
-                      <a href={`servicios${to.href}`} className="block hover:text-gray-500 transition-colors text-sm sm:text-base">{to.title}</a>
+                      <a key={to.title} href={`servicios${to.href}`} className="block hover:text-gray-500 transition-colors text-sm sm:text-base">{to.title}</a>
                     ))}
-                  </>
+                  </div>
                 ))}
               </ul>
             </div>

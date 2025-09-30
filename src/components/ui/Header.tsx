@@ -54,7 +54,7 @@ const Header = () => {
                                     {section.title === "servicios" ? (
                                         <>
                                             <p
-                                                className="w-full p-5 border-b border-b-gray-300 cursor-pointer uppercase flex justify-between items-center"
+                                                className="w-full p-4 border-b border-b-gray-300 cursor-pointer uppercase flex justify-between items-center"
                                                 onClick={() => setSubMenuOpen(!subMenuOpen)}
                                             >
                                                 Servicios
@@ -78,7 +78,7 @@ const Header = () => {
                                                             <Link
                                                                 key={item.href}
                                                                 to={`servicios${item.href}`}
-                                                                className="block p-5 pl-15 text-sm border-b border-b-gray-300 uppercase"
+                                                                className="block p-4 pl-15 text-sm border-b border-b-gray-300 uppercase"
                                                                 onClick={() => {
                                                                     setMenuOpen(!menuOpen)
                                                                     setSubMenuOpen(false)
@@ -94,7 +94,7 @@ const Header = () => {
                                     ) : (
                                         <Link
                                             to={section.href}
-                                            className="block p-5 border-b border-b-gray-300 uppercase"
+                                            className="block p-4 border-b border-b-gray-300 uppercase"
                                             onClick={() => {
                                                 setMenuOpen(!menuOpen)
                                                 setSubMenuOpen(!subMenuOpen)
