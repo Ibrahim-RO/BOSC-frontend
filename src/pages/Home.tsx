@@ -7,6 +7,8 @@ import ArticleOne from '../components/home/ArticleOne'
 import ArticleServices from '../components/home/ArticleServices'
 import ArticleExperience from '../components/home/ArticleExperience'
 import Formulario from '../components/home/Formulario'
+import Contabilidad from './servicios/Contabilidad'
+import ContabilidadSectionServicios from '../components/servicios/contabilidad/ContabilidadSectionServicios'
 
 
 // const Home = () => {
@@ -128,6 +130,13 @@ const Home = () => {
                 <ArticleServices />
                 <ArticleExperience />
                 <Formulario />
+            </section>
+
+            <section>
+                <Contabilidad />
+                <ContabilidadSectionServicios />
+
+
             </section>
         </>
     )
