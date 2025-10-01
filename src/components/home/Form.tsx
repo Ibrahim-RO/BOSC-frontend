@@ -10,7 +10,7 @@ type FormTypeClassname = {
     btn: string
 }
 
-const Form = ({design, btn} : FormTypeClassname) => {
+const Form = ({ design, btn }: FormTypeClassname) => {
     // Opciones para el select de servicios
     const servicios = [
         { value: '', label: 'Selecciona un servicio' },
@@ -73,11 +73,14 @@ const Form = ({design, btn} : FormTypeClassname) => {
             <div className="relative">
                 <div className="relative">
                     <input
-                        type="email"
                         placeholder="E-mail"
                         className={`${design} ${errors.email && 'border-red-500'} `}
                         {...register('email', {
-                            required: "El correo es obligatorio"
+                            required: "El correo es obligatorio",
+                            pattern: {
+                                value: /\S+@\S+\.\S+/,
+                                message: "E-mail no válido",
+                            },
                         })}
                     />
                     {errors.email && <ErrorMessage>{errors.email.message}</ErrorMessage>}
@@ -107,7 +110,7 @@ const Form = ({design, btn} : FormTypeClassname) => {
                 <div className="relative">
                     <div className="relative">
                         <select
-                            className={`${design} ${errors.service && 'border-red-500'} `}
+                            className={`${design} appearance-none ${errors.service && 'border-red-500'} `}
                             {...register('service', {
                                 required: "El servicio es obligatorio"
                             })}
@@ -153,7 +156,7 @@ const Form = ({design, btn} : FormTypeClassname) => {
                 >
                     {mutation.isPending ? (
                         <>
-                            <span className="size-5 border-2 border-black border-t-transparent rounded-full animate-spin" />
+                            <span className="size-5 border-2 border-white border-t-transparent rounded-full animate-spin mr-2" />
                             Enviando...
                         </>
                     ) : (
