@@ -11,6 +11,12 @@ const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false)
     const [subMenuOpen, setSubMenuOpen] = useState(false)
 
+    const scroll = () => {
+        window.scrollTo({
+            top: 0
+        });
+    }
+
     return (
         <header className="w-full fixed top-0 z-50 flex flex-col justify-between items-center">
             <motion.div
@@ -18,19 +24,17 @@ const Header = () => {
                 transition={{ type: "spring", stiffness: 60, damping: 15 }}
                 className="w-full h-16 flex justify-between items-center bg-header p-6 md:py-10 md:px-20"
             >
-                <div className="text-white flex justify-center items-center gap-3 md:gap-5">
-                    <Link to="/">
-                        <img
-                            src={logoBosc}
-                            alt="nombre onexo"
-                            className="max-h-10 md:max-h-12 border-r-2 border-color-white pr-2"
-                        />
-                    </Link>
+                <Link to="/" className="text-white flex justify-center items-center gap-3 md:gap-5">
+                    <img
+                        src={logoBosc}
+                        alt="nombre onexo"
+                        className="max-h-10 md:max-h-12 border-r-2 border-color-white pr-2"
+                    />
                     <div className='flex flex-col md:flex-row md:justify-center md:items-center md:gap-5'>
                         <h2 className="font-bold text-2xl md:text-4xl">BOSC</h2>
                         <p className="text-[0.8rem] sm:text-xl">Back Office & Consulting</p>
                     </div>
-                </div>
+                </Link>
 
                 <NavBar
                     menuOpen={menuOpen}
@@ -84,6 +88,7 @@ const Header = () => {
                                                                 onClick={() => {
                                                                     setMenuOpen(!menuOpen)
                                                                     setSubMenuOpen(false)
+                                                                    scroll()
                                                                 }}
                                                             >
                                                                 {item.title}
@@ -100,6 +105,7 @@ const Header = () => {
                                             onClick={() => {
                                                 setMenuOpen(!menuOpen)
                                                 setSubMenuOpen(!subMenuOpen)
+                                                scroll()
                                             }}
                                         >
                                             {section.title}

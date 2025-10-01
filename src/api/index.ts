@@ -4,9 +4,9 @@ import type { FormType } from "../types"
 
 export const sendEmail = async (formData: FormType) => {
     try {
-        const { data } = await api.post('/contact/new-contact', formData)
+        const { data } = await api.post<string>('/contact/new-contact', formData)
         return data
     } catch (error) {
-        if(isAxiosError(error) && error.response) throw new Error(error.response.data.error)
+        if(isAxiosError(error) && error.response) throw new Error("Error al enviar el correo")
     }
 }

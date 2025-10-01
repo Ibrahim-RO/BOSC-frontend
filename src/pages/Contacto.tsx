@@ -1,4 +1,4 @@
-import contact from "../assets/Contacto/TEXT015.jpg"
+import contact from "../assets/Contacto/TEXT015.webp"
 import Form from "../components/home/Form"
 
 const Contacto = () => {

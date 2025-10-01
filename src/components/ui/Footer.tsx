@@ -47,7 +47,7 @@ const Footer = () => {
                 {navigationSection.map((item, idx) => (
                   <div key={idx}>
                     {item.subMenu?.map((to) => (
-                      <a key={to.title} href={`servicios${to.href}`} className="block hover:text-gray-500 transition-colors text-sm sm:text-base">{to.title}</a>
+                      <a key={to.title} href={`/servicios${to.href}`} className="block hover:text-gray-500 transition-colors text-sm sm:text-base">{to.title}</a>
                     ))}
                   </div>
                 ))}
@@ -64,7 +64,7 @@ const Footer = () => {
                   <div className='space-y-2'>
                     <p className='text-xs sm:text-sm md:text-base flex items-center gap-2 justify-center sm:justify-start'><FaPhoneAlt /> 8125 8171 44</p>
                     <p className='text-xs sm:text-sm md:text-base flex items-center gap-2 justify-center sm:justify-start'><FaPhoneAlt /> 8119 1755 23</p>
-                    <p className='text-xs sm:text-sm md:text-base flex items-center gap-2 justify-center sm:justify-start'><MdEmail /> administracion@concultoresbosc.mx</p>
+                    <p className='text-xs sm:text-sm md:text-base flex items-center gap-2 justify-center sm:justify-start'><MdEmail /> administracion@consultoresbosc.mx</p>
                   </div>
                 </li>
               </ul>

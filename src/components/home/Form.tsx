@@ -41,7 +41,7 @@ const Form = ({ design, btn }: FormTypeClassname) => {
             toast.error(error.message)
         },
         onSuccess: (data) => {
-            toast.success(data)
+            toast.success(data!)
             reset()
         }
     })

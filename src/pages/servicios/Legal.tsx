@@ -3,8 +3,8 @@ import SectionOne from "../../components/servicios/SectionOne"
 import SectionTwo from "../../components/servicios/SectionTwo"
 import Contactar from "../../components/ui/Contactar"
 import { data } from "../../data/servicios/legal"
-import Imagen1 from '../../assets/Servicios-Legal/BOSC_Legal001.jpg'
-import Imagen2 from '../../assets/Servicios-Legal/BOSC_Legal002.jpg'
+import Imagen1 from '../../assets/Servicios-Legal/BOSC_Legal001.webp'
+import Imagen2 from '../../assets/Servicios-Legal/BOSC_Legal002.webp'
 
 const Legal = () => {
   return (
