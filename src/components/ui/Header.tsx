@@ -16,18 +16,20 @@ const Header = () => {
             <motion.div
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ type: "spring", stiffness: 60, damping: 15 }}
-                className="w-full h-16 flex justify-around items-center bg-header !p-5 md:!p-10"
+                className="w-full h-16 flex justify-between items-center bg-header p-6 md:py-10 md:px-20"
             >
-                <div className="text-white flex justify-center items-center gap-5">
+                <div className="text-white flex justify-center items-center gap-3 md:gap-5">
                     <Link to="/">
                         <img
                             src={logoBosc}
                             alt="nombre onexo"
-                            className="max-h-12 border-r-2 border-color-white pr-2"
+                            className="max-h-10 md:max-h-12 border-r-2 border-color-white pr-2"
                         />
                     </Link>
-                    <h2 className="font-bold text-4xl">BOSC</h2>
-                    <p className="text-[0.8rem] sm:text-xl">Back Office & Consulting</p>
+                    <div className='flex flex-col md:flex-row md:justify-center md:items-center md:gap-5'>
+                        <h2 className="font-bold text-2xl md:text-4xl">BOSC</h2>
+                        <p className="text-[0.8rem] sm:text-xl">Back Office & Consulting</p>
+                    </div>
                 </div>
 
                 <NavBar
