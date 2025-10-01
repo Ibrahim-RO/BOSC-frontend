@@ -1,4 +1,3 @@
-import React from 'react'
 import fondoHome from '../assets/Inicio/Base_Bosc_inicio.webp'
 import icoBosc from '../assets/Inicio/bosc_icon.svg'
 import icoInferiorBosc from '../assets/Inicio/Bosc_icon01.svg'
@@ -101,7 +100,7 @@ const Home = () => {
                                 servicio de excelencia y de calidad.
                             </p>
                         </div>
-                        <button className='bg-cafeBosc text-sm sm:text-base md:text-[1rem] font-semibold rounded-sm hover:bg-cafeOscuro px-4 py-2 mt-3 cursor-pointer transition-colors'>
+                        <button className='bg-btn text-sm sm:text-base md:text-[1rem] font-semibold rounded-sm hover:bg-cafeBosc px-4 py-2 mt-3 cursor-pointer transition-colors'>
                             SABER MÁS
                         </button>
                     </div>

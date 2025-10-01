@@ -2,12 +2,13 @@
 
 @theme {
   --color-primary: #1E40AF;
-  --color-header: #172554;
+  --color-header: #24213d;
   --color-azul: #172554;;
   --color-cafeBosc: #A67B5B;
   --color-cafeOscuro: #8C6247;
   --color-negro: #1A1A1A;
   --color-title: #d4ac6b;
   --color-btn: #d4ab6a;
+  --color-services: #2c305c
 }
 

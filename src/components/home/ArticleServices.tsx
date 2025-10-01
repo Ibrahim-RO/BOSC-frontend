@@ -1,4 +1,4 @@
-import React from 'react'
+import { Link } from 'react-router-dom'
 import icoContabilidad from '../../assets/Inicio/IconosServicios/Bosc_Icons_01Contabilidad.svg'
 import icoEstados from '../../assets/Inicio/IconosServicios/Bosc_Icons_02EstadosFinan.svg'
 import icoFinanzas from '../../assets/Inicio/IconosServicios/Bosc_Icons_03Finanzas.svg'
@@ -8,49 +8,60 @@ import icoImpuestos from '../../assets/Inicio/IconosServicios/Bosc_Icons_06Impue
 import icoLegal from '../../assets/Inicio/IconosServicios/Bosc_Icons_07Legal.svg'
 import icoRecurso from '../../assets/Inicio/IconosServicios/Bosc_Icons_08Talento.svg'
 import icoTecnologia from '../../assets/Inicio/IconosServicios/Bosc_Icons_09Tecnologia.svg'
+import { scrollTop } from '../../utils/scroll'
 
 // Datos para los servicios financieros (solo un ejemplo)
 const services = [
   {
     title: "Contabilidad y nómina",
-    image: icoContabilidad
+    image: icoContabilidad,
+    href: "servicios/contabilidad"
   },
   {
     title: "Estados financieros",
-    image: icoEstados
+    image: icoEstados,
+    href: "servicios/estados-financieros"
   },
   {
     title: "Finanzas",
-    image: icoFinanzas
+    image: icoFinanzas,
+    href: "servicios/finanzas"
   },
   {
     title: "Consultoría financiera",
-    image: icoConsultoria
+    image: icoConsultoria,
+    href: "servicios/consultoria-financiera"
   },
   {
     title: "Procesos y control interno",
-    image: icoProcesos
+    image: icoProcesos,
+    href: "servicios/procesos"
   },
   {
     title: "Impuestos",
-    image: icoImpuestos
+    image: icoImpuestos,
+    href: "servicios/impuestos"
   },
   {
     title: "Legal",
-    image: icoLegal
+    image: icoLegal,
+    href: "servicios/legal"
   },
   {
     title: "Recurso humano",
-    image: icoRecurso
+    image: icoRecurso,
+    href: "servicios/recursos-humanos"
   },
   {
     title: "Tecnología",
-    image: icoTecnologia
+    image: icoTecnologia,
+    href: "servicios/tecnologia"
   },
   
 ];
 
 const ArticleServices = () => {
+
   return (
     <div className="bg-gray-50 min-h-screen py-12 px-4 sm:px-6 lg:px-40">
       <div className="max-w-7xl mx-auto">
@@ -74,9 +85,13 @@ const ArticleServices = () => {
               </h3>
               
               {/* Botón */}
-              <button className=" hover:bg-white hover:text-black cursor-pointer border-2 border-white text-white font-medium py-2 px-4 rounded">
+              <Link 
+                to={service.href} 
+                className=" hover:bg-white hover:text-black cursor-pointer border-2 border-white text-white font-medium py-2 px-4 rounded"
+                onClick={scrollTop}
+              >
                 SABER MÁS
-              </button>
+              </Link>
             </div>
           ))}
         </div>

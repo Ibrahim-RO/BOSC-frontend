@@ -3,8 +3,8 @@ import SectionOne from "../../components/servicios/SectionOne"
 import SectionTwo from "../../components/servicios/SectionTwo"
 import Contactar from "../../components/ui/Contactar"
 import { data } from "../../data/servicios/recursos-humanos"
-import Imagen1 from "../../assets/Servicios-Recursos-humanos/BOSC_Talento001.png"
-import Imagen2 from "../../assets/Servicios-Recursos-humanos/BOSC_Talento002.png"
+import Imagen1 from "../../assets/Servicios-Recursos-humanos/BOSC_Talento001.webp"
+import Imagen2 from "../../assets/Servicios-Recursos-humanos/BOSC_Talento002.webp"
 
 const RecursoHumano = () => {
   return (

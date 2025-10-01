@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom"
+import { scrollTop } from "../../utils/scroll"
 
 const Contactar = () => {
 
@@ -12,7 +13,10 @@ const Contactar = () => {
   return (
     <button
         className='bg-btn hover:bg-btn/80 transition-colors text-black font-semibold px-4 py-2 rounded-full uppercase cursor-pointer'
-        onClick={handleNavigate}
+        onClick={(e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
+          handleNavigate(e)
+          scrollTop()
+        }}
     >Contactar</button>
   )
 }

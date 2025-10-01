@@ -1,4 +1,3 @@
-import React from 'react'
 import fondoNosotros from '../assets/Nosotros/bosc fondo002.webp'
 import NosotrosEquipo from '../components/nosotros/NosotrosEquipo'
 import NosotrosDiferenciadores from '../components/nosotros/NosotrosDiferenciadores'
