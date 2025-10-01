@@ -61,7 +61,10 @@ const NavBar: React.FC<NavBarProps> = ({ menuOpen, setMenuOpen, setSubMenuOpen, 
                                                     <Link
                                                         to={`servicios${item.href}`}
                                                         className="block px-5 py-3 text-sm text-gray-700 hover:bg-gray-100"
-                                                        onClick={() => setOpen(false)}
+                                                        onClick={() => {
+                                                            setOpen(false)
+                                                            scroll()
+                                                        }}
                                                     >
                                                         {item.title}
                                                     </Link>
