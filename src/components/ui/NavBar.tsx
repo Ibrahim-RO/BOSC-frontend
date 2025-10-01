@@ -5,6 +5,7 @@ import { FaBars } from "react-icons/fa6";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { MdKeyboardArrowUp } from "react-icons/md";
 import { navigationSection } from '../../data/menu';
+import { scrollTop } from '../../utils/scroll';
 
 interface NavBarProps {
     menuOpen: boolean
@@ -15,12 +16,6 @@ interface NavBarProps {
 }
 
 const NavBar: React.FC<NavBarProps> = ({ menuOpen, setMenuOpen, setSubMenuOpen, className = '' }) => {
-    const scroll = () => {
-        window.scrollTo({
-            top: 0
-        });
-    }
-
     const [open, setOpen] = useState(false);
     const menuRef = useRef<HTMLDivElement>(null);
 
@@ -63,7 +58,7 @@ const NavBar: React.FC<NavBarProps> = ({ menuOpen, setMenuOpen, setSubMenuOpen, 
                                                         className="block px-5 py-3 text-sm text-gray-700 hover:bg-gray-100"
                                                         onClick={() => {
                                                             setOpen(false)
-                                                            scroll()
+                                                            scrollTop()
                                                         }}
                                                     >
                                                         {item.title}
@@ -78,7 +73,7 @@ const NavBar: React.FC<NavBarProps> = ({ menuOpen, setMenuOpen, setSubMenuOpen, 
                             <NavLink
                                 to={section.href}
                                 className={({ isActive }) => `font-semibold uppercase rounded-lg ${isActive ? 'bg-title text-black px-2.5 py-1.5' : "text-white relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[3px] after:bg-title after:transition-all after:duration-300 hover:after:w-full"}`}
-                                onClick={scroll}
+                                onClick={scrollTop}
                             >
                                 <span>{section.title}</span>
                             </NavLink>

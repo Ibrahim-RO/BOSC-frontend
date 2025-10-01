@@ -6,16 +6,11 @@ import { Link } from 'react-router-dom'
 import NavBar from './NavBar';
 import { useState } from 'react';
 import { navigationSection } from '../../data/menu';
+import { scrollTop } from '../../utils/scroll';
 
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false)
     const [subMenuOpen, setSubMenuOpen] = useState(false)
-
-    const scroll = () => {
-        window.scrollTo({
-            top: 0
-        });
-    }
 
     return (
         <header className="w-full fixed top-0 z-50 flex flex-col justify-between items-center">
@@ -52,7 +47,7 @@ const Header = () => {
                         animate={{ x: 0 }}
                         exit={{ x: "100%" }}
                         transition={{ type: "tween", duration: 0.4 }}
-                        className="bg-white w-full min-h-dvh overflow-y-auto" // Esta línea permite el scroll
+                        className="bg-white w-full min-h-dvh overflow-y-auto"
                     >
                         <nav>
                             {navigationSection.map((section, idx) => (
@@ -88,7 +83,7 @@ const Header = () => {
                                                                 onClick={() => {
                                                                     setMenuOpen(!menuOpen)
                                                                     setSubMenuOpen(false)
-                                                                    scroll()
+                                                                    scrollTop()
                                                                 }}
                                                             >
                                                                 {item.title}
@@ -105,7 +100,7 @@ const Header = () => {
                                             onClick={() => {
                                                 setMenuOpen(!menuOpen)
                                                 setSubMenuOpen(!subMenuOpen)
-                                                scroll()
+                                                scrollTop()
                                             }}
                                         >
                                             {section.title}

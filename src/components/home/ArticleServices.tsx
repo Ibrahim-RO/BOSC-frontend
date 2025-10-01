@@ -8,6 +8,7 @@ import icoImpuestos from '../../assets/Inicio/IconosServicios/Bosc_Icons_06Impue
 import icoLegal from '../../assets/Inicio/IconosServicios/Bosc_Icons_07Legal.svg'
 import icoRecurso from '../../assets/Inicio/IconosServicios/Bosc_Icons_08Talento.svg'
 import icoTecnologia from '../../assets/Inicio/IconosServicios/Bosc_Icons_09Tecnologia.svg'
+import { scrollTop } from '../../utils/scroll'
 
 // Datos para los servicios financieros (solo un ejemplo)
 const services = [
@@ -60,6 +61,7 @@ const services = [
 ];
 
 const ArticleServices = () => {
+
   return (
     <div className="bg-gray-50 min-h-screen py-12 px-4 sm:px-6 lg:px-40">
       <div className="max-w-7xl mx-auto">
@@ -83,7 +85,11 @@ const ArticleServices = () => {
               </h3>
               
               {/* Botón */}
-              <Link to={service.href} className=" hover:bg-white hover:text-black cursor-pointer border-2 border-white text-white font-medium py-2 px-4 rounded">
+              <Link 
+                to={service.href} 
+                className=" hover:bg-white hover:text-black cursor-pointer border-2 border-white text-white font-medium py-2 px-4 rounded"
+                onClick={scrollTop}
+              >
                 SABER MÁS
               </Link>
             </div>
