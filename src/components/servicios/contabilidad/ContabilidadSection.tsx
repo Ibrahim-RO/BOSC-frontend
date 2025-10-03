@@ -4,7 +4,7 @@ import image from "../../../assets/Servicios Contabilidad/asesoria.webp"
 const ContabilidadSection = () => {
     return (
         <div className='bg-negro flex items-center justify-center px-4 sm:px-8 lg:px-35 py-8 sm:py-10'>
-            <div className='flex flex-col lg:flex-row items-center justify-cente w-full gap-6 md:gap-8'>
+            <div className='flex flex-col lg:flex-row items-center justify-center w-full gap-6 md:gap-8'>
                 {/* Contenedor principal de contenido - arriba en móvil, izquierda en tablet/desktop */}
                 <div className='flex flex-col items-start  justify-center w-full lg:w-[46%] text-left md:text-left space-y-5 px-5 md:px-5 lg:px-0'>
                     <div className='space-y-3 sm:space-y-4 w-full'>

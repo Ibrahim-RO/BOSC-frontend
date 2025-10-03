@@ -6,71 +6,6 @@ import ArticleOne from '../components/home/ArticleOne'
 import ArticleServices from '../components/home/ArticleServices'
 import ArticleExperience from '../components/home/ArticleExperience'
 import Formulario from '../components/home/Formulario'
-import Contabilidad from './servicios/Contabilidad'
-import ContabilidadSectionServicios from '../components/servicios/contabilidad/ContabilidadSectionServicios'
-
-
-// const Home = () => {
-//     return (
-//         <>
-//             <section
-//                 className='flex items-center justify-center'
-//                 style={{
-//                     backgroundImage: `url(${fondoHome})`,
-//                     height: '100dvh',
-//                     backgroundPosition: 'center'
-//                 }}
-//             >
-
-//                 <div className=' flex items-center justify-center max-w-[80%]'>
-//                     <div className=''>
-//                         <div className=' w-[55%] space-y-2'>
-//                             <h2 className='text-3xl font-bold'>¿Quiénes somos?</h2>
-//                             <p className='text-[1rem]'>
-//                                 Somos una firma multidisciplinaria que brinda soluciones
-//                                 integrales a pequeñas y medianas empresas <br />
-//                             </p>
-//                             <p className='text-[1rem]'>
-//                                 Nuestra firma está conformada por un grupo de
-//                                 profesionales con amplia experiencia en diferentes
-//                                 industrias y altamente capacitadas para brindar un
-//                                 servicio de excelencia y de calidad.
-//                             </p>
-//                         </div>
-//                         <button className='bg-cafeBosc text-[1rem] font-semibold rounded-sm hover:bg-cafeOscuro px-4 py-2 mt-3 cursor-pointer'>
-//                             SABER MÁS
-//                         </button>
-//                     </div>
-
-
-//                     <div>
-//                         <img
-//                             src={icoBosc}
-//                             alt="Icono de BOSC"
-//                             className='w-xl'
-//                         />
-//                     </div>
-//                 </div>
-
-//                 <div className='absolute bottom-0 left-1/2 transform -translate-x-1/2 py-4'>
-//                     <img
-//                         src={icoInferiorBosc}
-//                         alt="Icono inferior de BOSC"
-//                         className='w-[3rem]'
-//                     />
-//                 </div>
-
-//             </section>
-
-//             <section>
-//                 <ArticleOne />
-//                 <ArticleServices />
-//                 <ArticleExperience />
-//                 <Formulario />
-//             </section>
-//         </>
-//     )
-// }
 
 const Home = () => {
     return (
@@ -129,13 +64,6 @@ const Home = () => {
                 <ArticleServices />
                 <ArticleExperience />
                 <Formulario />
-            </section>
-
-            <section>
-                <Contabilidad />
-                <ContabilidadSectionServicios />
-
-
             </section>
         </>
     )
