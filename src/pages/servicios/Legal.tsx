@@ -2,7 +2,8 @@ import Questions from "../../components/servicios/Questions"
 import SectionOne from "../../components/servicios/SectionOne"
 import SectionTwo from "../../components/servicios/SectionTwo"
 import Contactar from "../../components/ui/Contactar"
-import { data } from "../../data/servicios/legal"
+// import { data } from "../../data/servicios/legal"
+import { data } from "../../data/servicios/tecnologia/tecnologia"
 import Imagen1 from '../../assets/Servicios-Legal/BOSC_Legal001.webp'
 import Imagen2 from '../../assets/Servicios-Legal/BOSC_Legal002.webp'
 
@@ -17,12 +18,12 @@ const Legal = () => {
       <SectionTwo image={Imagen2} >
         <h2 className="text-title text-2xl md:text-4xl font-bold uppercase">Alcance de servicios</h2>
         <ul className="list-none space-y-2 text-base md:text-lg">
-          <li className="before:content-['+'] before:mr-2">Representación legal</li>
-          <li className="before:content-['+'] before:mr-2">Asesoría legal corporativa</li>
-          <li className="before:content-['+'] before:mr-2">Constitución de entidades legales</li>
-          <li className="before:content-['+'] before:mr-2"><b>Registro de marcas ante el IMPI</b></li>
-          <li className="before:content-['+'] before:mr-2">Elaboración de actas, contratos, convenios, fideicomisos, sesiones, entre otras operaciones contractuales</li>
-          <li className="before:content-['+'] before:mr-2">Diagnósticos para efectos de compra o venta de empresas</li>
+          <li className="before:content-['+'] before:mr-2 before:font-bold">Representación legal</li>
+          <li className="before:content-['+'] before:mr-2 before:font-bold">Asesoría legal corporativa</li>
+          <li className="before:content-['+'] before:mr-2 before:font-bold">Constitución de entidades legales</li>
+          <li className="before:content-['+'] before:mr-2 before:font-bold"><b>Registro de marcas ante el IMPI</b></li>
+          <li className="before:content-['+'] before:mr-2 before:font-bold">Elaboración de actas, contratos, convenios, fideicomisos, sesiones, entre otras operaciones contractuales</li>
+          <li className="before:content-['+'] before:mr-2 before:font-bold">Diagnósticos para efectos de compra o venta de empresas</li>
         </ul>
         <Contactar />
       </SectionTwo>

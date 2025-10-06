@@ -19,12 +19,12 @@ const Tecnologia = () => {
       <SectionTwo image={Imagen2} >
         <h2 className="text-title text-2xl md:text-4xl font-bold uppercase">Alcance de servicios</h2>
         <ul className="list-none space-y-2 text-base md:text-lg">
-          <li className="before:content-['+'] before:mr-2">Implementación de ERP y módulos <b>(Oracle, Odoo, Microsoft Dynamic)</b></li>
-          <li className="before:content-['+'] before:mr-2">Gestión de proyecto <b>(PM)</b></li>
-          <li className="before:content-['+'] before:mr-2">Implementación de Integraciones</li>
-          <li className="before:content-['+'] before:mr-2">Arquitectura de soluciones</li>
-          <li className="before:content-['+'] before:mr-2">Renta de equipo funcional (administración, contabilidad y finanzas)</li>
-          <li className="before:content-['+'] before:mr-2">Renta de equipo técnico</li>
+          <li className="before:content-['+'] before:mr-2 before:font-bold">Implementación de ERP y módulos <b>(Oracle, Odoo, Microsoft Dynamic)</b></li>
+          <li className="before:content-['+'] before:mr-2 before:font-bold">Gestión de proyecto <b>(PM)</b></li>
+          <li className="before:content-['+'] before:mr-2 before:font-bold">Implementación de Integraciones</li>
+          <li className="before:content-['+'] before:mr-2 before:font-bold">Arquitectura de soluciones</li>
+          <li className="before:content-['+'] before:mr-2 before:font-bold">Renta de equipo funcional (administración, contabilidad y finanzas)</li>
+          <li className="before:content-['+'] before:mr-2 before:font-bold">Renta de equipo técnico</li>
         </ul>
         <Contactar />
       </SectionTwo>
