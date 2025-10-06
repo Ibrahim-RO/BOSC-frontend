@@ -9,7 +9,7 @@ type CardsType = {
 const Cards = ({ title, data, classname }: CardsType) => {
     return (
         <section className="max-w-7xl mx-auto px-10 py-10 lg:pt-20 space-y-15">
-            <h2 className="text-title text-2xl md:text-4xl font-bold uppercase text-center">{title}</h2>
+            <h2 className="text-title text-[1.7rem] md:text-[2.7rem] font-bold uppercase text-center">{title}</h2>
             <article className={classname}>
                 {data.map((item, index) => (
                     <div

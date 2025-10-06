@@ -149,17 +149,17 @@ const NosotrosDiferenciadores = () => {
               ))}
             </div>
 
-            {/* Botones de navegación - Versión móvil/tableta (símbolos < >) */}
+            {/* Botones de navegación */}
             <button
               onClick={anteriorImagen}
-              className=" absolute left-2 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-30 hover:bg-opacity-50 rounded-full w-10 h-10 flex items-center justify-center transition-all backdrop-blur-sm"
+              className=" absolute left-2 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-30 hover:bg-black/70 rounded-full w-10 h-10 flex items-center justify-center transition-all backdrop-blur-sm cursor-pointer"
               aria-label="Imagen anterior"
             >
               <span className="text-white text-xl font-bold">‹</span>
             </button>
             <button
               onClick={siguienteImagen}
-              className=" absolute right-2 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-30 hover:bg-opacity-50 rounded-full w-10 h-10 flex items-center justify-center transition-all backdrop-blur-sm"
+              className=" absolute right-2 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-30 hover:bg-black/70 rounded-full w-10 h-10 flex items-center justify-center transition-all backdrop-blur-sm cursor-pointer"
               aria-label="Siguiente imagen"
             >
               <span className="text-white text-xl font-bold">›</span>
@@ -172,8 +172,8 @@ const NosotrosDiferenciadores = () => {
               <button
                 key={index}
                 onClick={() => irAImagen(index)}
-                className={`w-3 h-3 rounded-full transition-all ${
-                  index === indiceActual ? 'bg-negro scale-110' : 'bg-gray-400'
+                className={`w-3 h-3 cursor-pointer rounded-full transition-all ${
+                  index === indiceActual ? 'bg-negro scale-110' : 'bg-cafeOscuro'
                 }`}
                 aria-label={`Ir a la imagen ${index + 1}`}
               />

@@ -1,10 +1,10 @@
 import React from 'react'
 
 import { Link } from "react-router-dom";
-import Image1 from "../../../assets/Servicios-Procesos/Bosc_Icons_error.svg"
-import Image2 from "../../../assets/Servicios-Procesos/Bosc_Icons_metrica.svg"
-import Image3 from "../../../assets/Servicios-Procesos/Bosc_Icons_control.svg"
-import Image4 from "../../../assets/Servicios-Procesos/Bosc_Icons_serviciomedida.svg"
+import Image1 from "../../../assets/Servicios-Procesos/Bosc_002.svg"
+import Image2 from "../../../assets/Servicios-Procesos/Bosc_003.svg"
+import Image3 from "../../../assets/Servicios-Procesos/Bosc_001.svg"
+import Image4 from "../../../assets/Servicios-Procesos/Bosc_004.svg"
 
 const benefits = [
     {
@@ -45,12 +45,12 @@ const SectionBeneficios = () => {
                     {benefits.map((benefit, index) => (
                         <div
                             key={index}
-                            className="bg-azul rounded-lg shadow-md px-6 pb-4 flex flex-col items-start h-full mx-12 md:mx-1 lg:mx-16"
+                            className="bg-negro rounded-lg shadow-md px-6 pb-4 flex flex-col items-start h-full mx-12 md:mx-1 lg:mx-16"
                         >
                             <img
                                 src={benefit.image}
                                 alt={benefit.title}
-                                className="w-20 mb-0" 
+                                className="w-20 my-5" 
                             />
 
                             <h3 className="text-lg text-white mb-6 flex-grow leading-tight">

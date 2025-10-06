@@ -27,12 +27,12 @@ const Footer = () => {
           <div className="flex justify-center sm:justify-start">
             <ul className="space-y-2 text-center sm:text-left">
               <li>
-                <a href="#" className="hover:text-gray-500 transition-colors text-sm sm:text-base">
+                <a href="/" className="hover:text-gray-500 transition-colors text-sm sm:text-base">
                   PÁGINA DE INICIO
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-gray-500 transition-colors text-sm sm:text-base">
+                <a href="/nosotros" className="hover:text-gray-500 transition-colors text-sm sm:text-base">
                   NOSOTROS
                 </a>
               </li>
