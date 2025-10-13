@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import imgArticulo from '../../assets/Inicio/Bosc_001.webp'
 
 const ArticleOne = () => {
@@ -18,9 +19,11 @@ const ArticleOne = () => {
                     </div>
 
                     {/* Botón centrado en móvil, alineado a la izquierda en tablet/desktop */}
-                    <button className='text-white border-2 border-white text-sm sm:text-base md:text-[0.9rem] lg:text-[1rem] font-semibold rounded-sm hover:bg-cafeOscuro px-4 py-2 mt-4 sm:mt-5 cursor-pointer transition-colors w-auto'>
+                    <Link
+                        to={'/servicios/contabilidad'}
+                    className='text-white border-2 border-white text-sm sm:text-base md:text-[0.9rem] lg:text-[1rem] font-semibold rounded-sm hover:bg-cafeOscuro px-4 py-2 mt-4 sm:mt-5 cursor-pointer transition-colors w-auto'>
                         CONOCE NUESTROS SERVICIOS
-                    </button>
+                    </Link>
                 </div>
 
                 {/* Imagen - debajo en móvil, derecha en tablet/desktop */}

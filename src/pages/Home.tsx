@@ -6,8 +6,21 @@ import ArticleOne from '../components/home/ArticleOne'
 import ArticleServices from '../components/home/ArticleServices'
 import ArticleExperience from '../components/home/ArticleExperience'
 import Formulario from '../components/home/Formulario'
+import { useLocation } from 'react-router-dom'
+import { useEffect } from 'react'
 
 const Home = () => {
+    const { hash } = useLocation();
+
+    useEffect(() => {
+        if (hash) {
+            const element = document.querySelector(hash);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    }, [hash]);
+
     return (
         <>
             <section

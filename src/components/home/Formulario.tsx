@@ -5,7 +5,7 @@ import imageForm from '../../assets/Inicio/imageForm.webp'
 const Formulario: React.FC = () => {
 
   return (
-    <div className="min-h-screen bg-gray-200 flex items-center justify-center w-full">
+    <div id="contact" className="min-h-screen bg-gray-200 flex items-center justify-center w-full">
       <div className="w-full flex flex-col lg:flex-row bg-white shadow-xl overflow-hidden mx-0 ">
 
         <div className="lg:w-4/10 w-full">
