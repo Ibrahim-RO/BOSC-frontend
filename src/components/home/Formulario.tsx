@@ -17,13 +17,13 @@ const Formulario: React.FC = () => {
         </div>
 
         <div className="lg:w-6/10 w-full p-8 md:p-22 bg-gray-200">
-          <h2 className="text-3xl font-bold text-cafeBosc mb-2">CONTÁCTANOS</h2>
+          <h2 className="font-title text-3xl font-bold text-cafeBosc mb-2">CONTÁCTANOS</h2>
           <p className="text-black mb-8 font-bold">¿Cómo podemos ayudarte?</p>
           <p className='text-black mb-4'>Todos los campos son obligatorios</p>
 
           <Form
             design="w-full px-4 py-4 border-b-2 border-[#8B4513] rounded-t-lg transition-all duration-300 bg-gray-100 text-gray-500 placeholder-gray-400 outline-0"
-            btn="bg-cafeBosc hover:bg-cafeOscuro"
+            btn="font-title bg-cafeBosc hover:bg-cafeOscuro"
           />
         </div>
       </div>

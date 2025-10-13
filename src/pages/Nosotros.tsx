@@ -20,7 +20,7 @@ const Nosotros = () => {
         <div className='flex items-center justify-center w-full max-w-7xl'>
           <div className='w-full'>
             <div className='flex flex-col text-center justify-center space-y-4 md:space-y-6 lg:space-y-8 xl:space-y-8'>
-              <h2 className='text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-5xl 2xl:text-6xl text-cafeBosc font-bold leading-tight sm:leading-tight md:leading-tight lg:leading-normal'>
+              <h2 className='font-title text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-5xl 2xl:text-6xl text-cafeBosc font-bold leading-tight sm:leading-tight md:leading-tight lg:leading-normal'>
                 OFRECEMOS UN BACKOFFICE <br className='hidden sm:block' />
                 ORIENTADA A LA EXCELENCIA
               </h2>

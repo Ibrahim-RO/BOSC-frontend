@@ -12,7 +12,7 @@ const SectionOne = ({ title, description, image }: PresentationType) => {
             <article className="bg-services">
                 <div className="max-w-7xl mx-auto px-10 py-15 grid grid-cols-1 gap-10 lg:gap-0 lg:grid-cols-2 place-items-center">
                     <div className="space-y-8">
-                        <h2 className="text-3xl md:text-5xl text-title uppercase font-extrabold">{title}</h2>
+                        <h2 className="font-title text-3xl md:text-5xl text-title uppercase font-extrabold">{title}</h2>
                         <p className="text-base md:text-lg text-white">{description}</p>
                         <Link
                             to="/#contact"

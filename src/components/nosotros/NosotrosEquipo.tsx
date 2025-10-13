@@ -7,7 +7,7 @@ const NosotrosEquipo = () => {
                 {/* Contenedor principal de contenido izquierdo */}
                 <div className='flex flex-col items-center md:items-start justify-center w-full md:w-[50%] text-center md:text-left mb-6 md:mb-0'>
                     <div className='space-y-4 md:space-y-2 w-full max-w-2xl'>
-                        <h2 className='text-2xl sm:text-3xl md:text-[1.8rem] lg:text-[2.2rem] font-bold text-cafeBosc leading-tight'>
+                        <h2 className='font-title text-2xl sm:text-3xl md:text-[1.8rem] lg:text-[2.2rem] font-bold text-cafeBosc leading-tight'>
                             Nuestro <span className='text-white'>Equipo</span>
                         </h2>
                         <p className='text-base sm:text-lg md:text-[0.8rem] lg:text-[1.1rem] text-white leading-relaxed'>

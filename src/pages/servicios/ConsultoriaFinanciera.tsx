@@ -20,7 +20,7 @@ const ConsultoriaFinanciera = () => {
       />
 
       <SectionTwo image={Imagen2} reverse>
-        <h2 className="text-title text-3xl md:text-[2.7rem] font-bold uppercase">Alcance de servicios</h2>
+        <h2 className="font-title text-title text-3xl md:text-[2.7rem] font-bold uppercase">Alcance de servicios</h2>
         <ul className="list-none space-y-2 text-base md:text-lg">
           <li className="before:content-['+'] before:mr-2 before:font-bold">Renta de CFO / Director de finanzas por horas</li>
           <li className="before:content-['+'] before:mr-2 before:font-bold">Figura de consejero y/o comisario</li>
@@ -41,7 +41,7 @@ const ConsultoriaFinanciera = () => {
       <SectionFour />
 
       <SectionTwo image={Imagen4} reverse>
-        <h2 className="text-title text-3xl md:text-[2.7rem] font-bold uppercase">Backoffice <span className='text-azul'>Administrativo</span></h2>
+        <h2 className="font-title text-title text-3xl md:text-[2.7rem] font-bold uppercase">Backoffice <span className='text-azul'>Administrativo</span></h2>
         <p className='lg:-mt-6'><b>Renta de personal</b> para tareas administrativas</p>
         <ul className="list-none space-y-2 text-base md:text-lg">
           <li className="before:content-['+'] before:mr-2 before:font-bold">Renta de personal para tareas administrativas</li>

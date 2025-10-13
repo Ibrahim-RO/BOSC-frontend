@@ -9,7 +9,7 @@ const Contacto = () => {
     >
       <article className="lg:w-1/2 min-h-dvh flex flex-col justify-center p-10 md:p-15 lg:p-20 space-y-5">
         <div className="space-y-2">
-          <p className="text-title text-4xl font-bold uppercase">Contáctanos</p>
+          <p className="font-title text-title text-4xl font-bold uppercase">Contáctanos</p>
           <p className="text-white text-xl">¿Cómo podemos ayudarte?</p>
         </div>
         <div className="space-y-4">

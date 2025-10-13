@@ -1,4 +1,3 @@
-import React from 'react'
 import Image from '../../../assets/Servicios-Procesos/Bosc_Icons_diagrama.svg'
 
 // const Section = () => {
@@ -36,7 +35,7 @@ const Section = () => {
                     className='w-20 sm:w-20 md:w-24 lg:w-[8rem] mr-4 md:mr-6'
                 />
                 <div className='text-left'>
-                    <h3 className='font-bold text-base sm:text-lg md:text-xl lg:text-2xl'>
+                    <h3 className='font-title font-bold text-base sm:text-lg md:text-xl lg:text-2xl'>
                         ELABORAMOS DIAGRAMAS DE PROCESOS DE NEGOCIO
                     </h3>
                     <p className='text-[0.9rem] sm:text-sm md:text-base lg:text-base'>
@@ -46,7 +45,7 @@ const Section = () => {
             </div>
 
             <div className='w-full md:w-auto flex justify-center md:mb-4 lg:mb-0'>
-                <button className="bg-negro text-white font-bold text-sm md:text-base px-4 py-2 rounded-full uppercase  hover:text-title cursor-pointer hover:scale-110 transition-transform duration-300">
+                <button className="font-title bg-negro text-white font-bold text-sm md:text-base px-4 py-2 rounded-full uppercase  hover:text-title cursor-pointer hover:scale-110 transition-transform duration-300">
                     Me interesa
                 </button>
             </div>

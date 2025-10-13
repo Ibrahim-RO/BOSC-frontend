@@ -46,7 +46,7 @@ const sector = [
 const ArticleExperience = () => {
     return (
         <div className="bg-negro mx-auto px-4 sm:px-6 lg:px-8 py-12">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center text-cafeBosc mb-6">
+            <h1 className="font-title text-3xl md:text-4xl lg:text-5xl font-bold text-center text-cafeBosc mb-6">
                 Experiencia por sector
             </h1>
 
@@ -68,7 +68,7 @@ const ArticleExperience = () => {
                             />
                         </div>
 
-                        <h3 className="text-[1rem] font-semibold text-white text-center">
+                        <h3 className="font-title text-[1rem] font-semibold text-white text-center">
                             {sector.title}
                         </h3>
                     </div>
