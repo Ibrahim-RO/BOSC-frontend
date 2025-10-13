@@ -6,7 +6,7 @@ import ArticleOne from '../components/home/ArticleOne'
 import ArticleServices from '../components/home/ArticleServices'
 import ArticleExperience from '../components/home/ArticleExperience'
 import Formulario from '../components/home/Formulario'
-import { useLocation } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import { useEffect } from 'react'
 
 const Home = () => {
@@ -48,9 +48,11 @@ const Home = () => {
                                 servicio de excelencia y de calidad.
                             </p>
                         </div>
-                        <button className='bg-btn text-sm sm:text-base md:text-[1rem] font-semibold rounded-sm hover:bg-cafeBosc px-4 py-2 mt-3 cursor-pointer transition-colors'>
+                        <Link 
+                            to='/nosotros'
+                            className='bg-btn text-sm sm:text-base md:text-[1rem] font-semibold rounded-sm hover:bg-cafeBosc px-4 py-2 mt-3 cursor-pointer transition-colors'>
                             SABER MÁS
-                        </button>
+                        </Link>
                     </div>
 
                     {/* Imagen */}
