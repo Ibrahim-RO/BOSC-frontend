@@ -24,7 +24,7 @@ const Nosotros = () => {
                 OFRECEMOS UN BACKOFFICE <br className='hidden sm:block' />
                 ORIENTADA A LA EXCELENCIA
               </h2>
-              <p className='text-base sm:text-lg md:text-xl lg:text-[1.2rem] font-semibold leading-relaxed text-white'>
+              <p className='text-base sm:text-lg md:text-xl lg:text-[1rem] font-semibold leading-relaxed text-white'>
                 Diseñado con entregables claros y oportunos para que la alta <br className='hidden sm:block' />
                 gerencia se enfoque en el análisis y haga una toma de decisión <br className='hidden sm:block' />
                 oportuna y de valor.
