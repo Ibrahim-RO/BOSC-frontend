@@ -6,8 +6,21 @@ import ArticleOne from '../components/home/ArticleOne'
 import ArticleServices from '../components/home/ArticleServices'
 import ArticleExperience from '../components/home/ArticleExperience'
 import Formulario from '../components/home/Formulario'
+import { Link, useLocation } from 'react-router-dom'
+import { useEffect } from 'react'
 
 const Home = () => {
+    const { hash } = useLocation();
+
+    useEffect(() => {
+        if (hash) {
+            const element = document.querySelector(hash);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    }, [hash]);
+
     return (
         <>
             <section
@@ -22,7 +35,7 @@ const Home = () => {
                 <div className='flex flex-col lg:flex-row items-center justify-center max-w-[90%] md:max-w-[85%] lg:max-w-[80%] gap-6 lg:gap-12'>
                     {/* Contenido de texto */}
                     <div className='w-full lg:w-[55%] space-y-3 md:space-y-4 text-center lg:text-left'>
-                        <h2 className='text-2xl sm:text-3xl md:text-4xl font-bold'>¿Quiénes somos?</h2>
+                        <h2 className='font-title text-2xl sm:text-3xl md:text-4xl font-bold'>¿Quiénes somos?</h2>
                         <div className='space-y-3 md:space-y-4'>
                             <p className='text-sm sm:text-base md:text-[1rem] leading-relaxed'>
                                 Somos una firma multidisciplinaria que brinda soluciones
@@ -35,9 +48,11 @@ const Home = () => {
                                 servicio de excelencia y de calidad.
                             </p>
                         </div>
-                        <button className='bg-btn text-sm sm:text-base md:text-[1rem] font-semibold rounded-sm hover:bg-cafeBosc px-4 py-2 mt-3 cursor-pointer transition-colors'>
+                        <Link 
+                            to='/nosotros'
+                            className='font-title bg-btn text-sm sm:text-base md:text-[1rem] font-semibold rounded-sm hover:bg-cafeBosc px-4 py-2 mt-3 cursor-pointer transition-colors'>
                             SABER MÁS
-                        </button>
+                        </Link>
                     </div>
 
                     {/* Imagen */}

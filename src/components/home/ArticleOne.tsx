@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import imgArticulo from '../../assets/Inicio/Bosc_001.webp'
 
 const ArticleOne = () => {
@@ -7,20 +8,23 @@ const ArticleOne = () => {
                 {/* Contenedor principal de contenido - arriba en móvil, izquierda en tablet/desktop */}
                 <div className='flex flex-col items-center md:items-start justify-center w-full lg:w-[44%] text-center md:text-left'>
                     <div className='space-y-3 sm:space-y-4 w-full'>
-                        <h3 className='text-lg sm:text-xl md:text-[1.1rem] lg:text-[1.5rem] font-bold text-cafeBosc'>
+                        <h3 className='font-title text-lg sm:text-xl md:text-[1.1rem] lg:text-[1.5rem] font-bold text-cafeBosc'>
                             Impulsamos tu empresa <span className='text-white'>al siguiente nivel</span>
                         </h3>
                         <p className='text-sm sm:text-base md:text-[0.9rem] lg:text-[1.1rem] text-white leading-relaxed'>
-                            Explora nuestros servicios y descubre cómo nuestro 
-                            equipo puede ayudarte a alcanzar resultados reales 
+                            Explora nuestros servicios y descubre cómo nuestro
+                            equipo puede ayudarte a alcanzar resultados reales
                             y sostenibles.
                         </p>
                     </div>
 
                     {/* Botón centrado en móvil, alineado a la izquierda en tablet/desktop */}
-                    <button className='text-white border-2 border-white text-sm sm:text-base md:text-[0.9rem] lg:text-[1rem] font-semibold rounded-sm hover:bg-cafeOscuro px-4 py-2 mt-4 sm:mt-5 cursor-pointer transition-colors w-auto'>
+                    <a
+                        href='/BOSC_Presentacion de Servicios.pdf'                        
+                        download={true}
+                        className='font-title text-white border-2 border-white text-sm sm:text-base md:text-[0.9rem] lg:text-[1rem] font-semibold rounded-sm hover:bg-cafeOscuro px-4 py-2 mt-4 sm:mt-5 cursor-pointer transition-colors w-auto'>
                         CONOCE NUESTROS SERVICIOS
-                    </button>
+                    </a>
                 </div>
 
                 {/* Imagen - debajo en móvil, derecha en tablet/desktop */}

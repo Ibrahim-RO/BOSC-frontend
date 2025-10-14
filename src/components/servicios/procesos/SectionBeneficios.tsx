@@ -1,5 +1,3 @@
-import React from 'react'
-
 import { Link } from "react-router-dom";
 import Image1 from "../../../assets/Servicios-Procesos/Bosc_002.svg"
 import Image2 from "../../../assets/Servicios-Procesos/Bosc_003.svg"
@@ -38,7 +36,7 @@ const SectionBeneficios = () => {
     return (
         <div className="bg-gray-50 min-h-screen py-12 px-4 sm:px-6 lg:px-40">
             <div className="max-w-7xl mx-auto">
-                <h2 className='text-[1.7rem] md:text-[2.7rem] font-bold flex justify-center pb-10'>
+                <h2 className='font-title text-[1.7rem] md:text-[2.7rem] font-bold flex justify-center pb-10'>
                     CONOCE NUESTROS BENEFICIOS
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
@@ -59,7 +57,7 @@ const SectionBeneficios = () => {
 
                             <Link
                                 to={benefit.href}
-                                className="self-end hover:bg-white hover:text-azul cursor-pointer border-2 border-white text-white font-medium py-2 px-4 rounded transition duration-300 text-sm"
+                                className="font-title self-end hover:bg-white hover:text-azul cursor-pointer border-2 border-white text-white font-medium py-2 px-4 rounded transition duration-300 text-sm"
                                 onClick={scrollTop}
                             >
                                 SABER MÁS

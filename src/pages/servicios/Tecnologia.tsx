@@ -17,7 +17,7 @@ const Tecnologia = () => {
         image={Imagen1}
       />
       <SectionTwo image={Imagen2} >
-        <h2 className="text-title text-2xl md:text-4xl font-bold uppercase">Alcance de servicios</h2>
+        <h2 className="font-title text-title text-2xl md:text-4xl font-bold uppercase">Alcance de servicios</h2>
         <ul className="list-none space-y-2 text-base md:text-lg">
           <li className="before:content-['+'] before:mr-2 before:font-bold">Implementación de ERP y módulos <b>(Oracle, Odoo, Microsoft Dynamic)</b></li>
           <li className="before:content-['+'] before:mr-2 before:font-bold">Gestión de proyecto <b>(PM)</b></li>

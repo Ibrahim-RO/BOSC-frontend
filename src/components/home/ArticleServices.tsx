@@ -65,7 +65,7 @@ const ArticleServices = () => {
   return (
     <div className="bg-gray-50 min-h-screen py-12 px-4 sm:px-6 lg:px-40">
       <div className="max-w-7xl mx-auto">
-        <h2 className='text-[1.5rem] text-center md:text-3xl font-bold flex justify-center pb-10'>PRÁCTICAS POR ÁREA DE NEGOCIO</h2>
+        <h2 className='font-title text-[1.5rem] text-center md:text-3xl font-bold flex justify-center pb-10'>PRÁCTICAS POR ÁREA DE NEGOCIO</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <div 
@@ -87,7 +87,7 @@ const ArticleServices = () => {
               {/* Botón */}
               <Link 
                 to={service.href} 
-                className=" hover:bg-white hover:text-black cursor-pointer border-2 border-white text-white font-medium py-2 px-4 rounded"
+                className=" font-title hover:bg-white hover:text-black cursor-pointer border-2 border-white text-white font-medium py-2 px-4 rounded"
                 onClick={scrollTop}
               >
                 SABER MÁS

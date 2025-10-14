@@ -102,7 +102,7 @@ const NosotrosDiferenciadores = () => {
         {/* Contenedor principal de contenido izquierdo */}
         <div className='flex flex-col items-start justify-center w-full lg:w-[50%] mb-8 lg:mb-0 lg:pr-8'>
           <div className='space-y-4 w-full text-center lg:text-left'>
-            <h2 className='text-2xl sm:text-3xl lg:text-[2.4rem] font-bold text-negro leading-tight'>
+            <h2 className='font-title text-2xl sm:text-3xl lg:text-[2.4rem] font-bold text-negro leading-tight'>
               DIFERENCIADORES EN <br className="hidden sm:block" /> EL MERCADO
             </h2>
             <p className='text-base sm:text-lg lg:text-[1rem] text-negro font-semibold leading-relaxed text-center lg:text-left'>

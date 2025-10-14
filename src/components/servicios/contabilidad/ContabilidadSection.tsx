@@ -1,4 +1,3 @@
-import React from 'react'
 import image from "../../../assets/Servicios Contabilidad/asesoria.webp"
 
 const ContabilidadSection = () => {
@@ -8,7 +7,7 @@ const ContabilidadSection = () => {
                 {/* Contenedor principal de contenido - arriba en móvil, izquierda en tablet/desktop */}
                 <div className='flex flex-col items-start  justify-center w-full lg:w-[46%] text-left md:text-left space-y-5 px-5 md:px-5 lg:px-0'>
                     <div className='space-y-3 sm:space-y-4 w-full'>
-                        <h2 className='text-[1.8rem] sm:text-xl md:text-[2.7rem] font-bold text-cafeBosc'>
+                        <h2 className='font-title text-[1.8rem] sm:text-xl md:text-[2.7rem] font-bold text-cafeBosc'>
                             ASESORÍA CONTABLE
                         </h2>
                         <p className='text-base sm:text-base md:text-[1rem] lg:text-[1rem] text-white leading-relaxed'>
